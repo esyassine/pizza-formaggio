@@ -1,0 +1,129 @@
+.nav {
+  &-link {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+
+    &:hover {
+      cursor: pointer;
+      color: $hover-grey;
+    }
+
+    &:active {
+      color: $grey;
+    }
+  }
+
+  &-search {
+    border-radius: 20px;
+
+    &-input {
+      width: 0;
+      display: none;
+      padding-left: .5rem;
+      
+      &.active {
+        display: block;
+        animation-name: expandSearch;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+      }
+
+      &-sidebar {
+        display: block;
+      }
+    }
+  }
+
+  &-cart {
+    position: relative;
+
+    & .active {
+      background: white;
+
+      & i {
+        color: $dark-grey;
+      }
+    }
+  }
+
+  &-profile {
+    background: white;
+    border-radius: 100%;
+
+    &-btn {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background-color: $pale-red;
+      border-radius: 100%;
+    }
+
+    &-initials {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  &-sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: .2s;
+    background-color: $dark-grey;
+    
+    &.active {
+      width: 200px;
+      box-shadow: $card-shadow $dark-shadow-color;
+    }
+  }
+}
+
+.navbar {
+  &-logo {
+    width: calc(6em + 3vw);
+  }
+
+  &-brand {
+    filter: drop-shadow(0 0 .3rem rgba(0, 0, 0, .5));
+    font-family: "Potta One", cursive;
+  }
+
+  &-nav {
+    flex-direction: row;
+  }
+
+  &-toggler {
+    transition: .2s;
+    background: $grey;
+    box-shadow: $button-shadow $shadow-color;
+
+    & i {
+      color: white;
+    }
+
+    &:focus, 
+    &:active:focus {
+      background: $dark-grey;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:hover {
+      background: $light-grey;
+    }
+  }
+}
+
+.badge {
+  border-radius: 20px;
+  background: $orange;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}

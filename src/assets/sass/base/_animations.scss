@@ -1,0 +1,23 @@
+@keyframes expandSearch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em
+  }
+}
+
+@keyframes deleteAnim {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: rotate(20deg)
+  } 
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: none;
+  }
+}

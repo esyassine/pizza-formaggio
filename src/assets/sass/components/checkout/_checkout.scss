@@ -1,0 +1,101 @@
+.steps {
+  &-action {
+    margin-top: 24px;
+  }
+}
+
+.checkout {
+  &-form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba($dark-pale-blue, $alpha: 0.7);
+    backdrop-filter: blur(5px);
+    padding: 2em;
+    border-radius: 10px;
+    border: 2px solid rgba($lighter-grey, $alpha: .5);
+  }
+
+  &-footer {
+    z-index: 4;
+    background: rgba($dark-pale-blue, $alpha: 0.7);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba($lighter-grey, $alpha: .3);
+    border-bottom: none;
+    border-radius: 2px solid $grey-pale-blue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: $footer-shadow $dark-shadow-color;
+    position: absolute;
+    overflow: hidden;
+    transform: translate(-50%, 0);
+    height: calc(3em + 1vw);
+    bottom: 0;
+    left: 50%;
+    width: 80vw;
+    transition: .2s;
+  }
+
+  &-value {
+    & h5 {
+      font-weight: 300;
+    }
+  }
+
+  &-details {
+    padding: 1.5em;
+    padding-bottom: 0;
+
+    & h5 {
+      text-shadow: $text-shadow $shadow-color;
+    }
+  }
+
+  &-receipt-url {
+    text-decoration: underline;
+    transition: .2s;
+  }
+
+  &-total {
+    background: $pale-green;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    border-radius: 10px;
+  }
+
+  &-status {
+    font-weight: 400;
+    background: $primary-green;
+    border-radius: 10px;
+    height: 1.5em;
+    padding: 0.5em;
+  }
+
+  &-btn {
+    width: 120px;
+    margin: 0.5em;
+  }
+}
+
+.ant-steps {
+  &-item {
+    font-size: large;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-content {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.anticon {
+  &-check svg path {
+    color: $primary-green;
+  }
+}

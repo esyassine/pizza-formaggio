@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+body {
+  overflow-x: hidden;
+  color: white;
+  background: $dark-grey;
+  background-image: -webkit-linear-gradient(
+      90deg,
+      rgba($dark-grey, $alpha: 0.7) 0%,
+      rgba(black, $alpha: 1) 90%
+    ),
+    url("../../images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}
+
+a,
+label,
+input,
+li,
+p {
+  color: white;
+  font-size: calc(0.6rem + 0.4vw) !important;
+  font-weight: 300;
+}
+
+button {
+  font-size: calc(0.6rem + 0.4vw) !important;
+}
+
+h1 {
+  font-size: calc(1.8rem + 0.4vw) !important;
+}
+h2 {
+  font-size: calc(1.5rem + 0.4vw) !important;
+}
+h3 {
+  font-size: calc(1.2rem + 0.4vw) !important;
+}
+h4 {
+  font-size: calc(1rem + 0.4vw) !important;
+}
+h5 {
+  font-size: calc(0.8rem + 0.4vw) !important;
+}
+
+h1 {
+  text-shadow: 0 5px 12px rgba(black, $alpha: 0.6);
+}

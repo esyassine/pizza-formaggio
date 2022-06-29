@@ -2,13 +2,21 @@
 
 ## Available Scripts
 
-### `npm start`
+```js
+npm start
+```
 
-### `npm test`
+```js
+npm test
+```
 
-### `npm run build`
+```js
+npm run build
+```
 
-### `npm run eject`
+```js
+npm run eject
+```
 
 # Deploy Firebase
 ```js
